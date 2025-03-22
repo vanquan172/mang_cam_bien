@@ -156,30 +156,6 @@ Section Cross References
     stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearFlag) refers to stm32f10x_rcc.o(.text.RCC_ClearFlag) for [Anonymous Symbol]
     stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetITStatus) refers to stm32f10x_rcc.o(.text.RCC_GetITStatus) for [Anonymous Symbol]
     stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit) refers to stm32f10x_rcc.o(.text.RCC_ClearITPendingBit) for [Anonymous Symbol]
-    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PortClock) refers to gpio_stm32f10x.o(.text.GPIO_PortClock) for [Anonymous Symbol]
-    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_GetPortClockState) refers to gpio_stm32f10x.o(.text.GPIO_GetPortClockState) for [Anonymous Symbol]
-    gpio_stm32f10x.o(.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_GetPortClockState) for GPIO_GetPortClockState
-    gpio_stm32f10x.o(.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_PortClock) for GPIO_PortClock
-    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_PinConfigure) for [Anonymous Symbol]
-    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_AFConfigure) refers to gpio_stm32f10x.o(.text.GPIO_AFConfigure) for [Anonymous Symbol]
-    startup_stm32f10x_md.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f10x_md.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f10x_md.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
-    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(.text) for Reset_Handler
-    startup_stm32f10x_md.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f10x_md.o(.text) refers to system_stm32f10x.o(.text.SystemInit) for SystemInit
-    startup_stm32f10x_md.o(.text) refers to __main.o(!!!main) for __main
-    startup_stm32f10x_md.o(.text) refers to startup_stm32f10x_md.o(HEAP) for Heap_Mem
-    startup_stm32f10x_md.o(.text) refers to startup_stm32f10x_md.o(STACK) for Stack_Mem
-    system_stm32f10x.o(.text.SystemInit) refers to system_stm32f10x.o(.text.SetSysClock) for SetSysClock
-    system_stm32f10x.o(.ARM.exidx.text.SystemInit) refers to system_stm32f10x.o(.text.SystemInit) for [Anonymous Symbol]
-    system_stm32f10x.o(.text.SetSysClock) refers to system_stm32f10x.o(.text.SetSysClockTo72) for SetSysClockTo72
-    system_stm32f10x.o(.ARM.exidx.text.SetSysClock) refers to system_stm32f10x.o(.text.SetSysClock) for [Anonymous Symbol]
-    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.data.SystemCoreClock) for SystemCoreClock
-    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.rodata.AHBPrescTable) for AHBPrescTable
-    system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
-    system_stm32f10x.o(.ARM.exidx.text.SetSysClockTo72) refers to system_stm32f10x.o(.text.SetSysClockTo72) for [Anonymous Symbol]
     stm32f10x_tim.o(.text.TIM_DeInit) refers to stm32f10x_rcc.o(.text.RCC_APB2PeriphResetCmd) for RCC_APB2PeriphResetCmd
     stm32f10x_tim.o(.text.TIM_DeInit) refers to stm32f10x_rcc.o(.text.RCC_APB1PeriphResetCmd) for RCC_APB1PeriphResetCmd
     stm32f10x_tim.o(.ARM.exidx.text.TIM_DeInit) refers to stm32f10x_tim.o(.text.TIM_DeInit) for [Anonymous Symbol]
@@ -323,6 +299,30 @@ Section Cross References
     stm32f10x_usart.o(.ARM.exidx.text.USART_ClearFlag) refers to stm32f10x_usart.o(.text.USART_ClearFlag) for [Anonymous Symbol]
     stm32f10x_usart.o(.ARM.exidx.text.USART_GetITStatus) refers to stm32f10x_usart.o(.text.USART_GetITStatus) for [Anonymous Symbol]
     stm32f10x_usart.o(.ARM.exidx.text.USART_ClearITPendingBit) refers to stm32f10x_usart.o(.text.USART_ClearITPendingBit) for [Anonymous Symbol]
+    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PortClock) refers to gpio_stm32f10x.o(.text.GPIO_PortClock) for [Anonymous Symbol]
+    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_GetPortClockState) refers to gpio_stm32f10x.o(.text.GPIO_GetPortClockState) for [Anonymous Symbol]
+    gpio_stm32f10x.o(.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_GetPortClockState) for GPIO_GetPortClockState
+    gpio_stm32f10x.o(.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_PortClock) for GPIO_PortClock
+    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PinConfigure) refers to gpio_stm32f10x.o(.text.GPIO_PinConfigure) for [Anonymous Symbol]
+    gpio_stm32f10x.o(.ARM.exidx.text.GPIO_AFConfigure) refers to gpio_stm32f10x.o(.text.GPIO_AFConfigure) for [Anonymous Symbol]
+    startup_stm32f10x_md.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_md.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_md.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(STACK) for __initial_sp
+    startup_stm32f10x_md.o(RESET) refers to startup_stm32f10x_md.o(.text) for Reset_Handler
+    startup_stm32f10x_md.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32f10x_md.o(.text) refers to system_stm32f10x.o(.text.SystemInit) for SystemInit
+    startup_stm32f10x_md.o(.text) refers to __main.o(!!!main) for __main
+    startup_stm32f10x_md.o(.text) refers to startup_stm32f10x_md.o(HEAP) for Heap_Mem
+    startup_stm32f10x_md.o(.text) refers to startup_stm32f10x_md.o(STACK) for Stack_Mem
+    system_stm32f10x.o(.text.SystemInit) refers to system_stm32f10x.o(.text.SetSysClock) for SetSysClock
+    system_stm32f10x.o(.ARM.exidx.text.SystemInit) refers to system_stm32f10x.o(.text.SystemInit) for [Anonymous Symbol]
+    system_stm32f10x.o(.text.SetSysClock) refers to system_stm32f10x.o(.text.SetSysClockTo72) for SetSysClockTo72
+    system_stm32f10x.o(.ARM.exidx.text.SetSysClock) refers to system_stm32f10x.o(.text.SetSysClock) for [Anonymous Symbol]
+    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32f10x.o(.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32f10x.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_stm32f10x.o(.ARM.exidx.text.SetSysClockTo72) refers to system_stm32f10x.o(.text.SetSysClockTo72) for [Anonymous Symbol]
     __2sprintf.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
     __2sprintf.o(.text) refers to _sputc.o(.text) for _sputc
     noretval__2sprintf.o(.text) refers to _printf_char_common.o(.text) for _printf_char_common
@@ -577,23 +577,6 @@ Removing Unused input sections from the image.
     Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_GetITStatus), (8 bytes).
     Removing stm32f10x_rcc.o(.text.RCC_ClearITPendingBit), (12 bytes).
     Removing stm32f10x_rcc.o(.ARM.exidx.text.RCC_ClearITPendingBit), (8 bytes).
-    Removing gpio_stm32f10x.o(.text), (0 bytes).
-    Removing gpio_stm32f10x.o(.text.GPIO_PortClock), (334 bytes).
-    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PortClock), (8 bytes).
-    Removing gpio_stm32f10x.o(.text.GPIO_GetPortClockState), (72 bytes).
-    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_GetPortClockState), (8 bytes).
-    Removing gpio_stm32f10x.o(.text.GPIO_PinConfigure), (124 bytes).
-    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PinConfigure), (8 bytes).
-    Removing gpio_stm32f10x.o(.text.GPIO_AFConfigure), (124 bytes).
-    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_AFConfigure), (8 bytes).
-    Removing system_stm32f10x.o(.text), (0 bytes).
-    Removing system_stm32f10x.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing system_stm32f10x.o(.ARM.exidx.text.SetSysClock), (8 bytes).
-    Removing system_stm32f10x.o(.text.SystemCoreClockUpdate), (110 bytes).
-    Removing system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
-    Removing system_stm32f10x.o(.ARM.exidx.text.SetSysClockTo72), (8 bytes).
-    Removing system_stm32f10x.o(.data.SystemCoreClock), (4 bytes).
-    Removing system_stm32f10x.o(.rodata.AHBPrescTable), (16 bytes).
     Removing stm32f10x_tim.o(.text), (0 bytes).
     Removing stm32f10x_tim.o(.text.TIM_DeInit), (558 bytes).
     Removing stm32f10x_tim.o(.ARM.exidx.text.TIM_DeInit), (8 bytes).
@@ -828,6 +811,23 @@ Removing Unused input sections from the image.
     Removing stm32f10x_usart.o(.ARM.exidx.text.USART_GetITStatus), (8 bytes).
     Removing stm32f10x_usart.o(.text.USART_ClearITPendingBit), (14 bytes).
     Removing stm32f10x_usart.o(.ARM.exidx.text.USART_ClearITPendingBit), (8 bytes).
+    Removing gpio_stm32f10x.o(.text), (0 bytes).
+    Removing gpio_stm32f10x.o(.text.GPIO_PortClock), (334 bytes).
+    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PortClock), (8 bytes).
+    Removing gpio_stm32f10x.o(.text.GPIO_GetPortClockState), (72 bytes).
+    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_GetPortClockState), (8 bytes).
+    Removing gpio_stm32f10x.o(.text.GPIO_PinConfigure), (124 bytes).
+    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_PinConfigure), (8 bytes).
+    Removing gpio_stm32f10x.o(.text.GPIO_AFConfigure), (124 bytes).
+    Removing gpio_stm32f10x.o(.ARM.exidx.text.GPIO_AFConfigure), (8 bytes).
+    Removing system_stm32f10x.o(.text), (0 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SetSysClock), (8 bytes).
+    Removing system_stm32f10x.o(.text.SystemCoreClockUpdate), (110 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_stm32f10x.o(.ARM.exidx.text.SetSysClockTo72), (8 bytes).
+    Removing system_stm32f10x.o(.data.SystemCoreClock), (4 bytes).
+    Removing system_stm32f10x.o(.rodata.AHBPrescTable), (16 bytes).
 
 371 unused section(s) (total 7140 bytes) removed from the image.
 
@@ -1245,7 +1245,7 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x000000ec   Data   RO          207    RESET               startup_stm32f10x_md.o
+    0x08000000   0x08000000   0x000000ec   Data   RO          463    RESET               startup_stm32f10x_md.o
     0x080000ec   0x080000ec   0x00000008   Code   RO          522  * !!!main             c_w.l(__main.o)
     0x080000f4   0x080000f4   0x00000034   Code   RO          694    !!!scatter          c_w.l(__scatter.o)
     0x08000128   0x08000128   0x0000001c   Code   RO          696    !!handler_zi        c_w.l(__scatter_zi.o)
@@ -1293,7 +1293,7 @@ Memory Map of the image
     0x0800016a   0x0800016a   0x00000000   Code   RO          610    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
     0x0800016a   0x0800016a   0x00000004   Code   RO          611    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
     0x0800016e   0x0800016e   0x00000006   Code   RO          612    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
-    0x08000174   0x08000174   0x00000040   Code   RO          208    .text               startup_stm32f10x_md.o
+    0x08000174   0x08000174   0x00000040   Code   RO          464    .text               startup_stm32f10x_md.o
     0x080001b4   0x080001b4   0x00000028   Code   RO          492    .text               c_w.l(noretval__2sprintf.o)
     0x080001dc   0x080001dc   0x00000068   Code   RO          494    .text               c_w.l(__printf.o)
     0x08000244   0x08000244   0x00000078   Code   RO          496    .text               c_w.l(_printf_dec.o)
@@ -1323,28 +1323,28 @@ Memory Map of the image
     0x080008e0   0x080008e0   0x000000a0   Code   RO          156    .text.RCC_GetClocksFreq  stm32f10x_rcc.o
     0x08000980   0x08000980   0x00000026   Code   RO            6    .text.ReadData      dht11.o
     0x080009a6   0x080009a6   0x00000002   PAD
-    0x080009a8   0x080009a8   0x00000008   Code   RO          217    .text.SetSysClock   system_stm32f10x.o
-    0x080009b0   0x080009b0   0x000000be   Code   RO          221    .text.SetSysClockTo72  system_stm32f10x.o
+    0x080009a8   0x080009a8   0x00000008   Code   RO          473    .text.SetSysClock   system_stm32f10x.o
+    0x080009b0   0x080009b0   0x000000be   Code   RO          477    .text.SetSysClockTo72  system_stm32f10x.o
     0x08000a6e   0x08000a6e   0x00000002   PAD
-    0x08000a70   0x08000a70   0x00000056   Code   RO          215    .text.SystemInit    system_stm32f10x.o
+    0x08000a70   0x08000a70   0x00000056   Code   RO          471    .text.SystemInit    system_stm32f10x.o
     0x08000ac6   0x08000ac6   0x00000002   PAD
-    0x08000ac8   0x08000ac8   0x00000012   Code   RO          275    .text.TIM_Cmd       stm32f10x_tim.o
+    0x08000ac8   0x08000ac8   0x00000012   Code   RO          232    .text.TIM_Cmd       stm32f10x_tim.o
     0x08000ada   0x08000ada   0x00000002   PAD
-    0x08000adc   0x08000adc   0x00000004   Code   RO          403    .text.TIM_GetCounter  stm32f10x_tim.o
-    0x08000ae0   0x08000ae0   0x00000004   Code   RO          381    .text.TIM_SetCounter  stm32f10x_tim.o
-    0x08000ae4   0x08000ae4   0x000000aa   Code   RO          235    .text.TIM_TimeBaseInit  stm32f10x_tim.o
+    0x08000adc   0x08000adc   0x00000004   Code   RO          360    .text.TIM_GetCounter  stm32f10x_tim.o
+    0x08000ae0   0x08000ae0   0x00000004   Code   RO          338    .text.TIM_SetCounter  stm32f10x_tim.o
+    0x08000ae4   0x08000ae4   0x000000aa   Code   RO          192    .text.TIM_TimeBaseInit  stm32f10x_tim.o
     0x08000b8e   0x08000b8e   0x00000002   PAD
     0x08000b90   0x08000b90   0x00000074   Code   RO           24    .text.USART1_Init   main.o
     0x08000c04   0x08000c04   0x00000022   Code   RO           26    .text.USART1_SendChar  main.o
     0x08000c26   0x08000c26   0x00000002   PAD
     0x08000c28   0x08000c28   0x0000001c   Code   RO           28    .text.USART1_SendString  main.o
-    0x08000c44   0x08000c44   0x00000012   Code   RO          433    .text.USART_Cmd     stm32f10x_usart.o
+    0x08000c44   0x08000c44   0x00000012   Code   RO          390    .text.USART_Cmd     stm32f10x_usart.o
     0x08000c56   0x08000c56   0x00000002   PAD
-    0x08000c58   0x08000c58   0x0000000a   Code   RO          473    .text.USART_GetFlagStatus  stm32f10x_usart.o
+    0x08000c58   0x08000c58   0x0000000a   Code   RO          430    .text.USART_GetFlagStatus  stm32f10x_usart.o
     0x08000c62   0x08000c62   0x00000002   PAD
-    0x08000c64   0x08000c64   0x000000b2   Code   RO          425    .text.USART_Init    stm32f10x_usart.o
+    0x08000c64   0x08000c64   0x000000b2   Code   RO          382    .text.USART_Init    stm32f10x_usart.o
     0x08000d16   0x08000d16   0x00000002   PAD
-    0x08000d18   0x08000d18   0x00000008   Code   RO          449    .text.USART_SendData  stm32f10x_usart.o
+    0x08000d18   0x08000d18   0x00000008   Code   RO          406    .text.USART_SendData  stm32f10x_usart.o
     0x08000d20   0x08000d20   0x0000002c   Code   RO           44    .text.delay_ms      timer2.o
     0x08000d4c   0x08000d4c   0x00000070   Code   RO           30    .text.main          main.o
     0x08000dbc   0x08000dbc   0x0000004e   Code   RO            4    .text.send          dht11.o
@@ -1368,8 +1368,8 @@ Memory Map of the image
     0x20000069        -       0x00000001   Zero   RW           12    .bss.u8Buff.3       dht11.o
     0x2000006a        -       0x00000001   Zero   RW           13    .bss.u8Buff.4       dht11.o
     0x2000006b   0x08000e60   0x00000005   PAD
-    0x20000070        -       0x00000200   Zero   RW          206    HEAP                startup_stm32f10x_md.o
-    0x20000270        -       0x00000400   Zero   RW          205    STACK               startup_stm32f10x_md.o
+    0x20000070        -       0x00000200   Zero   RW          462    HEAP                startup_stm32f10x_md.o
+    0x20000270        -       0x00000400   Zero   RW          461    STACK               startup_stm32f10x_md.o
 
 
 ==============================================================================
